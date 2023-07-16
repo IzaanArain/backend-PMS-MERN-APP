@@ -8,7 +8,7 @@ PMS is simple crud application that provides features such as adding, editing, r
 
 # Getting started in the backend
     //clone the repo
-    git clone https://github.com/IzaanArain/EMS-summer-2023-Project-backend.gitExercise-Tracker-Backend.git
+    git clone https://github.com/IzaanArain/backend-PMS-MERN-APP.git
     // install dependenacies
     npm install
     // Configure environment variables

@@ -25,6 +25,10 @@ app.get('/',(req,res)=>{
     res.send("<h1>this is a test</h1>")
 })
 
+app.get('/izaan',(req,res)=>{
+    res.send("<h1>this is a test</h1>")
+})
+
 const PORT=process.env.PORT || 3000
 
 app.listen(PORT,()=>{

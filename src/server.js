@@ -7,8 +7,9 @@ const cors=require('cors')
 const errorHandler = require("./middleware/ErrorHandler")
 
 
-connectDB()
+// connectDB()
 const app=express()
+
 
 //middlewares
 app.use(cors())
@@ -31,7 +32,15 @@ app.get('/:name',(req,res)=>{
 
 const PORT=process.env.PORT || 3000
 
-app.listen(PORT,()=>{
-    console.log(`Server conected on port http://localhost:${PORT}`.yellow)
-    console.log(`Server conected on port http://localhost:${PORT}/api/products`.yellow)
+connectDB().then(()=>{
+    app.listen(PORT,()=>{
+        console.log(`Server conected on port http://localhost:${PORT}`.yellow)
+        console.log(`Server conected on port http://localhost:${PORT}/api/products`.yellow)
+    })
 })
+
+// const PORT=process.env.PORT || 3000
+// app.listen(PORT,()=>{
+//     console.log(`Server conected on port http://localhost:${PORT}`.yellow)
+//     console.log(`Server conected on port http://localhost:${PORT}/api/products`.yellow)
+// })

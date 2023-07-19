@@ -17,7 +17,6 @@ const app=express()
 app.use(cors(
     {
         origin:"https://izaan-frontend-pms.vercel.app",
-        credentials:true
     }
 ))
 app.use(express.json())

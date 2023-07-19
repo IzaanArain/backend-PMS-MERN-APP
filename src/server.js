@@ -16,7 +16,7 @@ const app=express()
 
 app.use(cors(
     {
-        origin:["https://izaan-frontend-pms.vercel.app"],
+        origin:"https://izaan-frontend-pms.vercel.app",
         methods:["GET","POST","PUT","DELETE"],
         credentials:true
     }
